@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NetGás - Distribuidora</title>
+	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script type ="text/javascript" src="../javascript/jquery.lib.js"></script>
+        <script type ="text/javascript" src="../javascript/cadastra_clientes.js">
+            
+        </script>
+
+</head>
+<body>
+	<nav>
+		<ul>
+			<a class="logo" href="Index.html"><img class="logo" src="../imgs/logo.png"></a>
+			<li><a href="/produto">produtos</a></li>	
+			<li><a href="/login">Entrar</a></li>
+		</ul>
+	</nav>
+
+<div id="login">
+	<form>
+        <input   id ="content-search" type ="text" name="content-search"  value=""/>
+         <input type="button" value="buscar"  id="buscar" onclick="Post.findAll();" />    
+    </form>
+	<form method="POST">
+	   <label> </label>
+		<label for="user">nome completo: </label><br>
+		<input type="text" name="user" value="" id="nome"><br>
+		<label for="pass">Senha: </label><br>
+		<input type="password" name="pass" value=""  id="password"><br><br>
+		<label for="cpf">cpf: </label><br>
+		<input type="text" name="cpf" value=""  id="cpf"><br><br>
+        <label for="cep (somente números">cep: </label><br>
+		<input type="text" name="end"   id="cep"value=""><br><br>
+        <label for="nome">email: </label><br>
+		<input type="email" name="email" value="" id="email"><br><br>
+        <input type="button" value="enviar" onclick="Post.add()">
+	   <p><a href="/busca_clientes">mostra_clientes</a></p>
+     
+    
+    </form>
+</div>
+<div id="comments"></div>
+	<footer>
+		<p id="rodape">Copyright 2021 - NetGás</p>
+	</footer>
+
+</body>
+</html>

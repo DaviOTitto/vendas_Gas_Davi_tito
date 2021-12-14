@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NetGás - Distribuidora</title>
+	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script type ="text/javascript" src="../javascript/jquery.lib.js"></script>
+        <script type ="text/javascript" src="../javascript/produtos.js">
+            
+        </script>
+
+</head>
+<body>
+	<nav>
+		<ul>
+            <a class="logo" href="Index.html"><img class="logo" src="../imgs/logo.png"></a>
+			<li><a href="./cadastro_clientes">Cadastre-se</a></li>	
+			<li><a href="./login">Entrar</a></li><li>
+				<a href="./produto">Produtos</a></li>
+            </ul>
+	</nav>
+
+<div id="login">
+	<form>
+        <input   id ="content-search" type ="text" name="content-search"  value=""/>
+         <input type="button" value="buscar"  id="buscar" onclick="Post.findAll();" />    
+    </form>
+	<form method="POST" action="/logado">
+		<label>   </label>
+		<label for="user">nome: </label><br>
+		<input type="text" name="nome" value="" id="nome"><br>
+		<label for="cpf">valor: </label><br>
+		<input type="number" name="codigo" value="" id="valor"><br>
+		 <input type="button" value="postar"  id="postar" onclick="Post.add();" /><br>  
+	
+		</form>
+	<section>
+        <h2>produtos:</h2>
+        <div id='comments'></div>
+    </section>
+</div>
+
+	<footer>
+		<p id="rodape">Copyright 2021 - NetGás</p>
+	</footer>
+
+</body>
+</html>
